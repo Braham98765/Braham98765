@@ -1,0 +1,19 @@
+ansible:-
+---------
+
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible -y
+ansible --version
+python3 --version
+pip3 --version
+sudo nano /etc/ssh/sshd_config
+# Change PasswordAuthentication to yes
+sudo systemctl restart sshd
+sudo adduser devops
+sudo visudo
+su devops
+ssh-keygen
+ansible -i inventory -m ping all
+ansible -i inventory -k -m ping all
