@@ -1,0 +1,45 @@
+
+   instll apache2 in ubantu 20.0 vesrtion
+				and
+   instal spring pet clinic
+   
+   
+  instal spring pet clinic 
+   
+sudo apt update
+sudo apt-cache search openjdk
+sudo apt-cache madison openjdk-11-jdk
+sudo apt install openjdk-11-jdk -y
+java -version
+wget https://referenceapplicationskhaja.s3.us-west-2.amazonaws.com/spring-petclinic-2.4.2.jar
+java -jar spring-petclinic-2.4.2.jar
+
+search => ip addres + 8080
+
+
+
+
+instll apache2 in ubantu 20.0 vesrtion
+
+in google add => https://linuxhint.com/install_apache_web_server_ubuntu/
+
+sudo apt update
+sudo apt install apache2
+apache2 -version
+sudo ufw app list
+sudo ufw allow ‘Apache’
+sudo ufw status
+sudo systemctl status apache2
+hostname –I
+sudo mkdir -p /var/www/info.net/html
+sudo chown -R $USER:$USER /var/www/info.net/html
+sudo chmod -R 755 /var/www/info.net
+sudo nano /etc/apache2/sites-available/info.net.conf
+sudo a2ensiteconf info.net.
+sudo a2dissite 000-default.conf
+sudo systemctl restart apache2
+sudo apache2ctl configtest
+sudo nano /etc/apache2/conf-available/servername.conf
+    ServerName info.net
+sudo a2enconf servername
+sudo apache2ctl configtest
