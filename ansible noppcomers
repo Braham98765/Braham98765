@@ -1,0 +1,23 @@
+
+ansible:- 
+
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible
+sudo apt date
+sudo apt install software-properties-common
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible
+  ansible --verstion
+sudo vi /etc/ssh/sshd_config
+sudo service sshd restart
+sudo adduser devops
+sudo visudo
+			ALL=(ALL:ALL) NOPASSWD:ALL
+			SU devops
+			sudo ssh-keygen
+			ssh --copy-devops ip
+			ssh devops@ip addrues2
+			vi nopcommcers
+			ansible -i playbook -i host| nopcommcers playbook 
